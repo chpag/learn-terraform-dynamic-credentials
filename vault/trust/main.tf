@@ -36,7 +36,7 @@ resource "vault_jwt_auth_backend_role" "tfc_role2" {
 
   bound_claims_type = "glob"
   bound_claims = {
-    sub = "organization:${var.tfc_organization_name}:project:${var.tfc_project_name}:workspace:${var.tfc_workspace_name}2:run_phase:*"
+    sub = "organization:${var.tfc_organization_name}:project:${var.tfc_project_name}:workspace:${var.tfc_workspace_name}3:run_phase:*"
   }
 
   user_claim = "terraform_full_workspace"

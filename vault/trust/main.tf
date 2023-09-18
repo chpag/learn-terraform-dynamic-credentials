@@ -29,7 +29,7 @@ resource "vault_jwt_auth_backend_role" "tfc_role" {
 
 resource "vault_jwt_auth_backend_role" "tfc_role2" {
   backend        = vault_jwt_auth_backend.tfc_jwt.path
-  role_name      = "tfc-role2"
+  role_name      = "tfc-role"
   token_policies = [vault_policy.tfc_policy.name]
 
   bound_audiences = [var.tfc_vault_audience]

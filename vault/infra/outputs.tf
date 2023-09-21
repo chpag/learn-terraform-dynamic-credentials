@@ -3,7 +3,7 @@ output "secret_name" {
   value       = vault_kv_secret_v2.example.name
 }
 
-output "secret_value" {
+output "secret_path" {
   description = "Path to the secret"
-  value       = vault_kv_secret_v2.example.data_json
+  value       = vault_kv_secret_v2.example.path
 }
